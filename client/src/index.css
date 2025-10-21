@@ -1,0 +1,12 @@
+/* Tailwind varsayılanı 'media' olarak gelir */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* default olarak dark mode başlasın */
+html {
+  @apply bg-neutral-900 text-white;
+}
+body {
+  @apply bg-white text-black dark:bg-neutral-900 dark:text-white transition-colors duration-300;
+}
